@@ -1,0 +1,8 @@
+streamlit
+pandas
+Pillow
+folium
+matplotlib
+streamlit_folium
+plotly
+# bamboolib

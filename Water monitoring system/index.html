@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>HOME PAGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+.custom-background{
+      background-image: url("water.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 380px;
+
+    }
+  .hello{
+      width: 150px;
+      height: 40px;
+      color: gray;
+      font-size: 20px;
+    }
+    .counter {
+      margin-right: 20px;
+      font-size: 30px;
+      font-weight: bold;   
+    }
+    
+.counter-container{
+  background-color: grey;
+  height:130px;
+}
+.nav-item {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-item:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: #3a8fef; /* Set your default text color */
+    transition: color 0.3s;
+  }
+
+  .nav-item:hover a {
+    color: #ff00ff; /* Set your desired hover text color */
+  }
+  .counter-container{
+    background-color: white;
+  }
+  @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 70%;
+            }
+        }
+
+        .something {
+            font-family: Impact;
+            font-size: 70px;
+            overflow: hidden;
+            border-right: 2px solid #000;
+            white-space: nowrap;
+            margin: 0;
+            animation: typing 2s steps(20) infinite alternate;
+        }
+</style>
+<script>
+  
+  function countUp(counterId, start, limit) {
+  var counterElement = document.getElementById(counterId);
+  var count = start;
+  var increment = Math.ceil((limit - start) / 100); 
+
+  function updateCounter() {
+    count += increment;
+    counterElement.innerText = count;
+
+    if (count >= limit) {
+      clearInterval(intervalId);
+      counterElement.innerText = limit; 
+    }
+  }
+
+  var intervalId = setInterval(updateCounter, 20); 
+}
+
+window.onload = function() {
+  countUp("counter1", 0, 150);
+  countUp("counter2", 100, 390);
+  countUp("counter3", 40, 388);
+  countUp("counter4", 25, 449);
+};
+</script>
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-sm navbar-dark bg-light ">
+<div class="container" >
+  <img src="img.png"  style="height: 80px;width: 70px" ><a class="navbar-brand text-dark" style="font-family:Impact;font-size: 40px;margin-right: 15%;">AQUAINSIGHT</a>
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <button type="button" class="btn" style="font-family: Aharoni Bold;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='transparent';">
+            <a class="nav-link text-dark" href="index.html">HOME</a>
+        </button>
+    </li>
+    <li class="nav-item">
+        <button type="button" class="btn" style="font-family: Aharoni Bold;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='transparent';">
+            <a class="nav-link text-dark" href="waterreq.html">REQUEST</a>
+        </button>
+    </li>
+    <li class="nav-item">
+        <button type="button" class="btn" style="font-family: Aharoni Bold;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='transparent';">
+            <a class="nav-link text-dark" href="complaint.html">COMPLAINT</a>
+        </button>
+    </li>
+    <li class="nav-item">
+        <button type="button" class="btn" style="font-family: Aharoni Bold;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='transparent';">
+            <a class="nav-link text-dark" href="report.html">REPORT</a>
+        </button>
+    </li>
+    <li class="nav-item">
+        <button type="button" class="btn" style="font-family: Aharoni Bold;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='transparent';">
+            <a class="nav-link text-dark" href="contact.html">CONTACT</a>
+        </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn" style="font-family: Aharoni Bold;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='transparent';">
+          <a class="nav-link text-dark" href="">MAPS</a>
+      </button>
+  </li>
+</ul>
+
+</div>
+</nav>
+  <div class="container-fluid custom-background"><br><br><br><br><br><br><br><br>
+    <center>
+  <h1 class="something" style="font-family:Impact;font-size: 70px;">WATER SUPPLY NETWORK </h1>
+  <button class="btn btn-dark" id="hello"><a href="register.html" style="color: white;">Register here!</a></button>
+</center>
+</div>
+<div class="row">
+<div class="col-sm-6"><br><br><br><br><br><br><br><br>
+  <center>
+  <h1 style="font-size: 30px; font-weight: bold; font-size: 200%;">ABOUT THE WATER SUPPLY NETWORK</h1>
+<p style="max-width: 600px; text-align: left;">Water supply systems are networks whose edges and nodes are pressure pipes and either pipe junctions, water sources or end-users, respectively. Their function is to provide end-users with potable water with a sufficient pressure level. A WSS can be decomposed into hierarchically arranged tiers.</p><br>
+</div>
+  <div class="col-sm-6"><br><br><br>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <center><img src="img1.png" alt="Los Angeles" width="600" height="400" style="border-radius: 10%;"></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="img2.png" alt="Chicago" width="600" height="400" style="border-radius: 10%;"></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="img3.png" alt="New York" width="600" height="400" style="border-radius: 10%;"></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="img4.png" alt="New York" width="600" height="400" style="border-radius: 10%;"></center>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+</div>
+</center><br><br><br>
+<center>
+<div class="counter-container">
+  <div class="row">
+    <div class="col-sm-3">
+  <div class="counter" id="counter1">0</div>
+  <h4 style="margin-right:4% ;">Users</h4>
+</div>
+ <div class="col-sm-3">
+  <div class="counter" id="counter2">100</div>
+   <h4>Reports Filed</h4>
+ </div>
+  <div class="col-sm-3">
+  <div class="counter" id="counter3">40</div>
+   <h4>Compilents Solved</h4>
+ </div>
+  <div class="col-sm-3">
+  <div class="counter" id="counter4">25</div>
+   <h4>Incharge Officers</h4>
+ </div>
+</div>
+</div>
+</center>
+
+
+</body>
+
+

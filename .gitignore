@@ -1,0 +1,13 @@
+# System/Drivers
+CP210x_Universal_Windows_Driver/
+__pycache__/
+*.pyc
+
+# Large Media Files
+*.mp4
+*.avi
+*.mov
+
+# Local Environment
+venv/
+.input/
