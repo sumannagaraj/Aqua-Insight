@@ -50,7 +50,8 @@ Aqua Insight is an IoT and AI-based smart water management system that uses sens
 
 ---
 
-## Screenshots & Architecture
+## Architecture
 <img width="1006" height="291" alt="image" src="https://github.com/user-attachments/assets/cf4c2ff1-0dc1-41a4-8d0d-e13fa83dff0b" />
 <img width="1374" height="460" alt="image" src="https://github.com/user-attachments/assets/f6432fb8-6cc5-4300-8c96-35170770ec49" />
 <img width="1464" height="324" alt="image" src="https://github.com/user-attachments/assets/8f804383-ef41-4ee7-b4d3-a60964f7ddf2" />
+
